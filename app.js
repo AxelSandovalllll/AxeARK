@@ -9,7 +9,7 @@ closeMenu.addEventListener('click', close);
 
 function show() {
     mainMenu.style.display = 'flex';
-    mainMenu.style.top = '-1.5%';
+    mainMenu.style.top = '-2.3%';
 }
 
 function close() {

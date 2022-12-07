@@ -1,0 +1,26 @@
+@media screen and (max-width:800px) {
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-top: 5px solid #dea731;
+    }
+}
+
+@media screen and (min-width:801px) {
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-top: 5px solid #dea731;
+
+    }
+}
