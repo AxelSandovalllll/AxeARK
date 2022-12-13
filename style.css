@@ -22,11 +22,14 @@
     --p-font: 1.1rem;
 }
 
+/* setting a general overall look for the website */
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
+
+/* header setup, set the posiitoning to be in the right places  */
 header {
     position: fixed;
     right: 0;
@@ -42,15 +45,18 @@ header {
     transition: all .40 ease;
 }
 
+/* logo image properties */
 .logo img {
     width: 135px;
     height: auto;
 }
 
+/* set navbar to have flex display so child elements can follow in rows */
 .navbar {
     display: flex;
 }
 
+/* set properties for the links that are in the navbar */
 .navbar a {
     color: var(--second-color);
     font-size: var(--p-font);
@@ -61,7 +67,140 @@ header {
     transition: all .40s ease;
 }
 
+/* gave a nice hover effect when links are being selected */
 .navbar a:hover {
     background: var(--main-color);
     color: var(--text-color);
+}
+
+/* gave the logo properties that allow it to also work as a home button */
+#menu-icon {
+    font-size: 36px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+}
+
+/* section properties */
+section {
+    padding: 160px 16% 90px;
+}
+
+
+/* home background picture justification */
+.home {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(../Images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+
+/* home text h1 properties */
+.home-text h1 {
+    margin: 20px 0;
+    font-size: var(--h1-font);
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+/* change the color on specific text */
+span {
+    color: var(--main-color);
+}
+
+
+/* home text h4 properties */
+.home-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+/* home text h3 properties */
+.home-text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+
+/* button properties */
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: .5rem;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border: 1px solid var(--main-color);
+    transition: all .40s ease;
+}
+
+/* effect that occurs when button is hovered over */
+.btn:hover {
+    transform: scale(1.01) translate(-5px);
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
+
+/* what happens when the scroll event listener occurs */
+header.sticky {
+    padding: 10px 16%;
+    background: var(--bg-color);
+    border-bottom: 1px solid #0e1630;
+    transition: .3s;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-text h4 {
+    margin: 10px 0;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+}
+
+.about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+.about-gri {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.about-in h5 {
+    font-size: 22px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.about-img img {
+    height: auto;
+    width: 100%;
+    max-width: 460px;
 }
