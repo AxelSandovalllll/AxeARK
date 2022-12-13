@@ -1,177 +1,67 @@
-body {
+/* overall setup with font family */
+* {
+    padding: 0;
     margin: 0;
-    font-family: sans-serif;
-}
-
-hr {
-    background: none;
-    clear: both;
-    float: none;
-    width: 100%;
-    height: 1px;
-    border: none;
-    margin: -1px 0;
-}
-
-
-/* fixed position for the top screen/ navigation bar */
-.topScreen {
-    display: block;
-    /* position: fixed; */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-
-/* design the color properties and how the layout will be */
-nav {
-    background: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 5px solid #dea731;
-}
-
-/* customise the mainMenu items (About,Projects, About) */
-nav .mainMenu {
-    display: flex;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
     list-style: none;
-}
-
-nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
-    font-size: 1.5rem;
     text-decoration: none;
-    text-transform: uppercase;
-    color: white;
+    scroll-behavior: smooth;
 }
 
-nav .mainMenu li a:hover {
-    background: #dea731;
-    color: black;
+
+/* setup of all colors and font sizes */
+:root {
+    --bg-color: #020312;
+    --text-color: #fff;
+    --main-color: #eb4a4a;
+    --second-color: gray;
+    --other-color: #12141c;
+    --h1-font: 5.2rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
 }
 
-/*hide the hamburger menu when the screen size is set on large */
-nav .openMenu {
-    font-size: 2rem;
-    margin: 20px;
-    display: none;
-    cursor: pointer;
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
 }
 
-nav .mainMenu .closeMenu,
-.icons i {
-    font-size: 2rem;
-    display: none;
-    cursor: pointer;
-}
-
-/* logo customization, giving it cursor properties to act as a home button as well */
-nav .logo {
-    margin: 6px;
-    font-size: 25px;
-    cursor: pointer;
-    color: white;
-}
-
-nav .logo img {
-    position: absolute;
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
-    left: -20px;
-    top: -30px;
-    height: 160px;
-    width: auto;
-    margin-bottom: 25px;
-    color: white;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 16%;
+    border-bottom: 1px solid transparent;
+    transition: all .40 ease;
 }
 
-/*h1 properties */
-h1 {
-    margin-top: 46px;
-    text-align: center;
-    font-family: 'Bookman, URW Bookman L, serif';
+.logo img {
+    width: 135px;
+    height: auto;
 }
 
-/*hamburger menu to activate when screen is less than 700px*/
-@media(max-width:700px) {
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0s;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #dea731;
-        transition: top 1s ease;
-        display: none;
-    }
-
-    nav .mainMenu .closeMenu {
-        display: block;
-        top: 20px;
-        right: 20px;
-    }
-
-
-    nav .openMenu {
-        display: block;
-    }
-
-    nav .mainMenu li a:hover {
-        background: none;
-        color: black;
-        font-size: 1.6rem;
-    }
-
-    .icons i {
-        display: inline-block;
-        padding: 12px;
-    }
-
-    /* nav .logo img {
-        position: absolute;
-        display: flex;
-        left: -20px;
-        top: -22px;
-        height: 130px;
-        width: auto;
-        margin-bottom: 25px;
-    } */
+.navbar {
+    display: flex;
 }
 
-.fab {
-    margin-top: 5%;
-    text-align: center;
-    text-decoration: none;
-    margin: 0.5em;
-    display: inline-block;
-    font-size: 35px;
+.navbar a {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    padding: 10px 25px;
+    margin: 0 2px;
+    border-radius: .5rem;
+    transition: all .40s ease;
 }
 
-.fa-facebook:hover {
-    color: rgb(70, 120, 219);
+.navbar a:hover {
+    background: var(--main-color);
+    color: var(--text-color);
 }
-
-.fa-twitter:hover {
-    color: #55ACEE;
-}
-
-.fa-instagram:hover {
-    color: palevioletred;
-}
-
-
-/* .fa-tiktok:hover {
-    background: #000;
-    text-shadow: 2px 3px #fe2d52, -1px -3px #55acee;
-} */
-
-/* .contact {
-    font-size: 15px;
-} */

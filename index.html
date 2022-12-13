@@ -6,60 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AxeARK</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- links for everything that will be used -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+
+
+
+
 
 </head>
 
 <body>
-    <div class="topScreen">
-        <nav>
-            <div class="logo">
-                <a href="index.html"> <img src="./images/animeCD.png" alt="AxeARK"></a>
-            </div>
-            <div class="openMenu"><i class="fa fa-bars"></i>
-            </div>
-            <ul class="mainMenu">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <div class="closeMenu"><i class="fa fa-times"></i>
-                </div>
-                <span class="icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
-                </span>
-            </ul>
-        </nav>
-    </div>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
 
+        <!-- navbar setup -->
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <!-- javascript link -->
+    <script type="text/javascript" src="js/script.js"></script>
 
-    <main class="page">
-        <header class="hero">
-            <div class="hero-container">
-                <div class="hero-text">
-
-                    <h1>AxeARK </h1>
-
-                    <h4>'You need a build? We got you covered.'</h4>
-                </div>
-            </div>
-        </header>
-
-
-    </main>
-
-    <div class="footer">
-        <hr>
-
-        <hr>
-        <p class="contact"> Phone: (888)888-8888</p>
-        <p class="contact"> @AxeARK </p>
-    </div>
 </body>
-<script src="app.js"></script>
 
 </html>
