@@ -309,7 +309,7 @@ header.sticky {
 
 /* set properties for each image in each individual row item */
 .row img {
-    height: auto;
+    height: 40vh;
     width: 100%;
     border-radius: .5rem;
     margin-bottom: 1.5rem;
